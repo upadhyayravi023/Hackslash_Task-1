@@ -37,7 +37,7 @@ class Profile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Ken Nwaeze",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),),
-                      Text("current balance: 40.000",style: TextStyle(color: Colors.white)),
+                      Text("current balance: N10,712:00",style: TextStyle(color: Colors.white)),
 
                     ],
                   ),
