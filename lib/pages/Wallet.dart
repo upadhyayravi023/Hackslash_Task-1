@@ -77,7 +77,7 @@ backgroundColor: Color(0xff000d1d),
             Text("Ken Nwaeze", style: TextStyle(fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: Colors.white),),
-            Text("current balance: 40.000",
+            Text("current balance: N10,712:00",
                 style: TextStyle(color: Colors.white)),
 
           ],
