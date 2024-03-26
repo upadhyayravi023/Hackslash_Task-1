@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackslash_task1/utils/color.dart';
 
 class Wallet extends StatelessWidget {
   const Wallet({super.key});
@@ -11,20 +12,13 @@ class Wallet extends StatelessWidget {
         child: BottomNavigationBar(
 
           items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.home_outlined),
-                label: 'Home',
-                backgroundColor: Color(0xff000d1d)),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.account_balance_wallet_outlined),
-                label: 'Wallet',
-                backgroundColor: Color(0xff000d1d)),
-            BottomNavigationBarItem(icon: Icon(Icons.car_crash_outlined),
-                label: 'Track',
-                backgroundColor: Color(0xff000d1d)),
-            BottomNavigationBarItem(icon: Icon(Icons.person_outline),
-                label: 'Profile',
-                backgroundColor: Color(0xff000d1d)),
+            BottomNavigationBarItem(icon: Icon(Icons.home_outlined),label:'Home',backgroundColor:BackgroundColor1 ),
+            BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),label:'Wallet',backgroundColor:BackgroundColor1),
+            BottomNavigationBarItem(icon: Icon(Icons.car_crash_outlined),label:'Track' ,backgroundColor:BackgroundColor1),
+            BottomNavigationBarItem(icon: Icon(Icons.person_outline),label: 'Profile',backgroundColor:BackgroundColor1),
           ],
+          currentIndex: 1,
+          selectedItemColor: BackgroundColor3,
           onTap: (index) {
             switch (index) {
               case 0:

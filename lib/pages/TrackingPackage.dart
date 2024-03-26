@@ -17,6 +17,8 @@ class TrackingPackage extends StatelessWidget {
             BottomNavigationBarItem(icon: Icon(Icons.car_crash_outlined),label:'Track' ,backgroundColor:BackgroundColor1),
             BottomNavigationBarItem(icon: Icon(Icons.person_outline),label: 'Profile',backgroundColor:BackgroundColor1),
           ],
+          currentIndex: 2,
+          selectedItemColor: BackgroundColor3,
           onTap: (index){
             switch(index){
               case 0:

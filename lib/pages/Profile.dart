@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackslash_task1/utils/color.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -95,7 +96,7 @@ class Profile extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.perm_identity_outlined,color: Colors.white,),
+                      child: Icon(Icons.edit_document,color: Colors.white,),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
@@ -103,8 +104,104 @@ class Profile extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Edit Profile",style: TextStyle(fontSize: 16,color: Colors.white),),
-                          Text("Name, phone no, address, email ...",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
+                          Text("Statements & Reports",style: TextStyle(fontSize: 16,color: Colors.white),),
+                          Text("Download transaction details, deliveries",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
+                        ],
+                      ),
+                    ),
+                    Spacer(flex: 1,),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.arrow_forward_ios_outlined,color: Colors.white,),
+                    ),
+
+                  ],
+                ),
+
+              ),
+              SizedBox(height: 20,),
+              Container(
+                width: 550,
+                height: 60,
+                color: Color(0xff001B3B),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.notifications_none_outlined,color: Colors.white,),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Notifications Setting",style: TextStyle(fontSize: 16,color: Colors.white),),
+                          Text("mute,set location & tracking setting",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
+                        ],
+                      ),
+                    ),
+                    Spacer(flex: 1,),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.arrow_forward_ios_outlined,color: Colors.white,),
+                    ),
+
+                  ],
+                ),
+
+              ),
+              SizedBox(height: 20,),
+              Container(
+                width: 550,
+                height: 60,
+                color: Color(0xff001B3B),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.credit_card_outlined,color: Colors.white,),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Cards and Bank account Setting",style: TextStyle(fontSize: 16,color: Colors.white),),
+                          Text("change cards, delete card details",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
+                        ],
+                      ),
+                    ),
+                    Spacer(flex: 1,),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.arrow_forward_ios_outlined,color: Colors.white,),
+                    ),
+
+                  ],
+                ),
+
+              ),
+              SizedBox(height: 20,),
+              Container(
+                width: 550,
+                height: 60,
+                color: Color(0xff001B3B),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.call_end,color: Colors.white,),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Referrals",style: TextStyle(fontSize: 16,color: Colors.white),),
+                          Text("check no of friends and earn",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
                         ],
                       ),
                     ),
@@ -135,8 +232,8 @@ class Profile extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Edit Profile",style: TextStyle(fontSize: 16,color: Colors.white),),
-                          Text("Name, phone no, address, email ...",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
+                          Text("About Us",style: TextStyle(fontSize: 16,color: Colors.white),),
+                          Text("know more about us, terms and conditions",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
                         ],
                       ),
                     ),
@@ -159,7 +256,7 @@ class Profile extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.perm_identity_outlined,color: Colors.white,),
+                      child: Icon(Icons.logout_outlined,color: Colors.red,size:30,),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
@@ -167,104 +264,11 @@ class Profile extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Edit Profile",style: TextStyle(fontSize: 16,color: Colors.white),),
-                          Text("Name, phone no, address, email ...",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
-                        ],
-                      ),
-                    ),
-                    Spacer(flex: 1,),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.arrow_forward_ios_outlined,color: Colors.white,),
-                    ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 8,bottom: 8,right: 8,),
+                            child: Text("Log Out",style: TextStyle(fontSize: 18,color: Colors.white),),
+                          ),
 
-                  ],
-                ),
-
-              ),
-              SizedBox(height: 20,),
-              Container(
-                width: 550,
-                height: 60,
-                color: Color(0xff001B3B),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.perm_identity_outlined,color: Colors.white,),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Edit Profile",style: TextStyle(fontSize: 16,color: Colors.white),),
-                          Text("Name, phone no, address, email ...",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
-                        ],
-                      ),
-                    ),
-                    Spacer(flex: 1,),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.arrow_forward_ios_outlined,color: Colors.white,),
-                    ),
-
-                  ],
-                ),
-
-              ),
-              SizedBox(height: 20,),
-              Container(
-                width: 550,
-                height: 60,
-                color: Color(0xff001B3B),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.perm_identity_outlined,color: Colors.white,),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Edit Profile",style: TextStyle(fontSize: 16,color: Colors.white),),
-                          Text("Name, phone no, address, email ...",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
-                        ],
-                      ),
-                    ),
-                    Spacer(flex: 1,),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.arrow_forward_ios_outlined,color: Colors.white,),
-                    ),
-
-                  ],
-                ),
-
-              ),
-              SizedBox(height: 20,),
-              Container(
-                width: 550,
-                height: 60,
-                color: Color(0xff001B3B),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(Icons.perm_identity_outlined,color: Colors.white,),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Edit Profile",style: TextStyle(fontSize: 16,color: Colors.white),),
-                          Text("Name, phone no, address, email ...",style: TextStyle(fontSize: 12,color: Color(0xffA7A7A7)),),
                         ],
                       ),
                     ),
@@ -291,10 +295,12 @@ class Profile extends StatelessWidget {
 
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(icon: Icon(Icons.home_outlined),label:'Home',backgroundColor:Color(0xff000d1d) ),
-              BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),label:'Wallet',backgroundColor:Color(0xff000d1d)),
-              BottomNavigationBarItem(icon: Icon(Icons.car_crash_outlined),label:'Track' ,backgroundColor:Color(0xff000d1d)),
+              BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),label:'wallet',backgroundColor:Color(0xff000d1d),),
+              BottomNavigationBarItem(icon: Icon(Icons.car_crash_outlined),label:"Track" ,backgroundColor:Color(0xff000d1d)),
               BottomNavigationBarItem(icon: Icon(Icons.person_outline),label: 'Profile',backgroundColor:Color(0xff000d1d)),
             ],
+           currentIndex: 3,
+            selectedItemColor: BackgroundColor3,
             onTap: (index){
               switch(index){
               case 0:
@@ -305,6 +311,9 @@ class Profile extends StatelessWidget {
               break;
                 case 2:
                   Navigator.pushNamed(context, "/track");
+                  break;
+                case 3:
+                  Navigator.pushNamed(context, "/profile");
                   break;
               }
             },
