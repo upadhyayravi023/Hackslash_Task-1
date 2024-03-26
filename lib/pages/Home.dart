@@ -5,14 +5,14 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 class  _HomeState extends State<Home> {
-
+  bool _switchvalue=true;
 
   @override
 
   Widget build(BuildContext context) {
-    return Scaffold(
 
-      backgroundColor: BackgroundColor1,
+    return Scaffold(
+      backgroundColor: _switchvalue ? Color(0xff000d1d) : Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
@@ -269,7 +269,7 @@ class  _HomeState extends State<Home> {
           onTap: (index){
             switch(index){
               case 0:
-                Navigator.pushNamed(context, "/");
+                Navigator.pushNamed(context, "/",arguments: _switchvalue);
                 break;
               case 1:
                 Navigator.pushNamed(context, "/wallet");
