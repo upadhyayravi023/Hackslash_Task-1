@@ -7,13 +7,15 @@ import 'package:hackslash_task1/pages/Wallet.dart';
 
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class MyApp extends StatefulWidget {
+  _MyAppState createState() => _MyAppState();
+}
   // This widget is the root of your application.
+  class  _MyAppState extends State<MyApp> {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/profile': (context) => Profile(),
-        '/': (context) => const Home(),
+        '/': (context) =>  Home(),
 
         '/wallet': (context) => Wallet(),
         '/track': (context) => TrackingPackage(),

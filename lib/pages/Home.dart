@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hackslash_task1/utils/color.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class Home extends StatefulWidget {
+  _HomeState createState() => _HomeState();
+}
+class  _HomeState extends State<Home> {
+
 
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
 
