@@ -377,7 +377,7 @@ Widget build(BuildContext context) {
             onTap: (index){
               switch(index){
               case 0:
-              Navigator.pushNamed(context, "/");
+              Navigator.pushNamed(context, "/" ,arguments: _switchvalue);
               break;
               case 1:
               Navigator.pushNamed(context, "/wallet");
