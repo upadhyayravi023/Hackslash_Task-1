@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackslash_task1/utils/color.dart';
 
+
 class Wallet extends StatelessWidget {
   const Wallet({super.key});
 
