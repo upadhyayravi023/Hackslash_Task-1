@@ -78,7 +78,11 @@ class  _HomeState extends State<Home> {
                               style: TextStyle(fontSize: 13, color: Colors.white)),
                         ),
                       ],
-                    )],
+                    ),
+                  Padding(
+                    padding: const EdgeInsets.only(left:65,bottom: 20),
+                    child: Icon(Icons.notifications_none,size: 35,color: Colors.white,),
+                  )],
                               ),
                             ),
               ),
